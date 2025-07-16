@@ -91,6 +91,7 @@ main{
     width: 100%;
     margin-bottom: 45px;
 }
+/* Team Section-Styling  */
 .teams{
     align-items: center;
     justify-content: center;
@@ -104,6 +105,7 @@ main{
 .our-feature{
     max-width: 530px;
     margin-left: 130px;
+    /* border: 2px solid black; */
 }
 .our-feature-title{
     font-size: 2.8rem;
@@ -114,9 +116,26 @@ main{
 .btn01{
     margin-top: 50px;
 }
-/* Responsiveness Of the Overall */
+/* Responsiveness Of the Overall Small Devide*/
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links{
+    .navbar, .nav-links, .teams{
         flex-direction: column;
+    }
+    .team-image-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-feature{
+        margin: 0;
+        text-align: center;
+    }
+}
+/* Responsiveness of the overall Medium Size */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-feature{
+        margin:20px auto;
+        text-align: center;
     }
 }
