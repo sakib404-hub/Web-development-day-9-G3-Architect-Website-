@@ -70,7 +70,7 @@ main{
     font-weight: 500;
     color: black;
 }
-.navbar, .banner{
+.navbar, .banner, .sponsor{
     max-width: 1440px;
     margin: 0 auto;
 
@@ -145,10 +145,43 @@ main{
     font-size: 1.25rem;
     font-weight: 600;
 }
+/* Styling  The Sponsor Section  */
+.sponsor-description{
+    max-width: 545px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor h3{
+    /* border: 2px solid black; */
+    margin-bottom: 10px;
+}
+.sponsor-description-{
+    margin-top: 10px;
+    /* border: 2px solid black; */
+}
+.sponsors-detail-img{
+    filter: grayscale(100%);
+    margin-top: 50px;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Styling The footer Section  */
+footer{
+    max-width: 1440px;
+    height: 100px;
+    background-color: #FFF4E7;
+    margin: 130px auto 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* Responsiveness Of the Overall Small Devide*/
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .teams{
+    .navbar, .nav-links, .teams, .sponsors-detail-img{
         flex-direction: column;
+        gap: 40px;
     }
     .team-image-container, .card-container{
         grid-template-columns: repeat(1, 1fr);
@@ -163,11 +196,16 @@ main{
         margin: 0;
         text-align: center;
     }
+    .some-facts-description, .some-facts-title{
+        text-align: center;
+    }
 }
+
 /* Responsiveness of the overall Medium Size */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .teams{
+    .teams, .sponsors-detail-img{
         flex-direction: column;
+        gap: 40px;
     }
     .our-feature{
         margin:20px auto;
@@ -180,5 +218,8 @@ main{
     }
     .card{
         margin: 0 auto;
+    }
+    .some-facts-title, .some-facts-description{
+       text-align: center;
     }
 }
